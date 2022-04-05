@@ -28,10 +28,10 @@ public class principal {
 		int escoger = 0;
 		
 		System.out.print("\n\n");
-		System.out.println("1. Realizar simulaci�n con los coches predeterminados");
+		System.out.println("1. Realizar simulación con los coches predeterminados");
 		System.out.println("2. Introducir todo manualmente");
 		
-		System.out.println("\n�Qu� quieres hacer?");
+		System.out.println("\n¿Qué quieres hacer?");
 		System.out.print(">> ");
 		escoger = scan.next().charAt(0);
 		
@@ -72,27 +72,27 @@ public class principal {
 	
 	public coche[] crear_coche(coche[] coches, int posicion) {
 		
-		System.out.println("\n[Marca] �Cu�l es la marca del coche que quieres crear?");
+		System.out.println("\n[Marca] ¿Cuál es la marca del coche que quieres crear?");
 		System.out.print(">> ");
 		String nuevo_marca = scan.next();
 		
-		System.out.println("\n[Modelo] �Cu�l es el modelo del coche que quieres crear?");
+		System.out.println("\n[Modelo] ¿Cuál es el modelo del coche que quieres crear?");
 		System.out.print(">> ");
 		String nuevo_modelo = scan.next();
 		
-		System.out.println("\n[Carroceria] �Qu� carrocer�a tiene el coche que quieres crear?");
+		System.out.println("\n[Carroceria] ¿Qué carrocería tiene el coche que quieres crear?");
 		System.out.print(">> ");
 		String nuevo_carroceria = scan.next();
 		
-		System.out.println("\n[Color] �De que color es el coche que quieres crear?");
+		System.out.println("\n[Color] ¿De que color es el coche que quieres crear?");
 		System.out.print(">> ");
 		String nuevo_color = scan.next();
 		
-		System.out.println("\n[Precio] �Qu� precio tiene el coche que quieres crear?");
+		System.out.println("\n[Precio] ¿Qué precio tiene el coche que quieres crear?");
 		System.out.print(">> ");
 		double nuevo_precio = scan.nextDouble();
 		
-		System.out.println("\n[N�mero de puertas] �Cu�ntas puertas tiene el coche que quieres crear?");
+		System.out.println("\n[Número de puertas] ¿Cuántas puertas tiene el coche que quieres crear?");
 		System.out.print(">> ");
 		int nuevo_numero_puertas = scan.nextInt();
 		
@@ -101,7 +101,7 @@ public class principal {
 				"\n Modelo del coche .............. 	" + nuevo_modelo +
 				"\n Carrocer�a .................... 	" + nuevo_carroceria + 
 				"\n Color del coche ............... 	" + nuevo_color + 
-				"\n Precio del coche .............. 	" + nuevo_precio + " �" + 
+				"\n Precio del coche .............. 	" + nuevo_precio + " €" + 
 				"\n Numero de puertas del coche ... 	" + nuevo_numero_puertas + "\n");
 		
 		coche miCoche = new coche(nuevo_numero_puertas, nuevo_precio, nuevo_color, nuevo_modelo, nuevo_marca, nuevo_carroceria);
@@ -226,7 +226,7 @@ public class principal {
 				
 				switch (opcion) {
 			
-					case '1': // ================================  O P C I � N  1  ================================
+					case '1': // ================================  O P C I Ó N  1  ================================
 						
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("Has seleccionado la opción 1: \"Definir un nuevo coche\"\n");
@@ -259,12 +259,12 @@ public class principal {
 						break;
 						
 						
-					case '2': // ================================  O P C I � N  2  ================================
+					case '2': // ================================  O P C I Ó N  2  ================================
 					
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("Has seleccionado la opción 2: \"Modificar los atributos\"\n");
 			    		
-			    		System.out.println("\nCat�logo de coches\n");
+			    		System.out.println("\nCatálogo de coches\n");
 			    		
 			    		for (int n = 0; n < parking.length; n++) {
 			    			
@@ -292,7 +292,7 @@ public class principal {
 			    			
 			    		}
 			    		
-			    		System.out.println("\n[Posicion] ¿Que coche quieres modificar?");
+			    		System.out.println("\n[Posicion] ¿Qué coche quieres modificar?");
 			    		System.out.print(">> ");
 			    		posicion = scan.nextInt();
 			    		
@@ -306,7 +306,7 @@ public class principal {
 						break;
 						
 					
-					case '3': // ================================  O P C I � N  3  ================================
+					case '3': // ================================  O P C I Ó N  3  ================================
 					
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("Has seleccionado la opción 3: \"Mostrar información\"\n");
@@ -349,7 +349,7 @@ public class principal {
 						break;
 						
 						
-					case '4': // ================================  O P C I � N  4  ================================
+					case '4': // ================================  O P C I Ó N  4  ================================
 						
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("Has seleccionado la opción 4: \"Mostrar estadísticas\"\n");
@@ -360,7 +360,7 @@ public class principal {
 						break;
 				
 					
-					case '5': // ================================  O P C I � N  5  ================================
+					case '5': // ================================  O P C I Ó N  5  ================================
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("Has seleccionado la opción 5: \"Salir\"\n");
 			    					    		
@@ -522,7 +522,7 @@ public class principal {
 				
 				switch (opcion) {
 			
-					case '1': // ================================  O P C I � N  1  ================================
+					case '1': // ================================  O P C I Ó N  1  ================================
 					
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("Has seleccionado la opción 1: \"Modificar los atributos\"\n");
@@ -572,7 +572,7 @@ public class principal {
 						break;
 						
 					
-					case '2': // ================================  O P C I � N  2  ================================
+					case '2': // ================================  O P C I Ó N  2  ================================
 					
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("Has seleccionado la opción 2: \"Mostrar información\"\n");
@@ -615,7 +615,7 @@ public class principal {
 						break;
 						
 						
-					case '3': // ================================  O P C I � N  3  ================================
+					case '3': // ================================  O P C I Ó N  3  ================================
 						
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("Has seleccionado la opción 3: \"Mostrar estadísticas\"\n");
@@ -626,7 +626,7 @@ public class principal {
 						break;
 				
 					
-					case '4': // ================================  O P C I � N  4  ================================
+					case '4': // ================================  O P C I Ó N  4  ================================
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("Has seleccionado la opción 4: \"Salir\"\n");
 			    					    		
