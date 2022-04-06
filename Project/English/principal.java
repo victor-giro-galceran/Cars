@@ -101,7 +101,7 @@ public class principal {
 				"\n Model of the car .............. 	" + new_model +
 				"\n Bodywork ...................... 	" + new_bodywork + 
 				"\n Color of the car .............. 	" + new_color + 
-				"\n Price of the car .............. 	" + new_price + " �" + 
+				"\n Price of the car .............. 	" + new_price + " €" + 
 				"\n Number of doors ............... 	" + new_number_doors + "\n");
 		
 		car myCar = new car(new_number_doors, new_price, new_color, new_model, new_brand, new_bodywork);
@@ -190,9 +190,9 @@ public class principal {
 		average = sum / cars.length;		
 		
 		System.out.println("                                       Statistics\n");
-		System.out.println(" The average of all prices is ....	" + Math.round(average) + " �");
-		System.out.println(" The highest price is ............	" + Math.round(maximum_price) + " �");
-		System.out.println(" The lowest price is .............	" + Math.round(minimum_price) + " �");
+		System.out.println(" The average of all prices is ....	" + Math.round(average) + " €");
+		System.out.println(" The highest price is ............	" + Math.round(maximum_price) + " €");
+		System.out.println(" The lowest price is .............	" + Math.round(minimum_price) + " €");
 	
 	}
 	
@@ -259,7 +259,7 @@ public class principal {
 						break;
 						
 						
-					case '2': // ================================  O P C I � N  2  ================================
+					case '2': // ================================  O P T I O N  2  ================================
 					
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 2: \"Modify the attributes\"\n");
@@ -306,7 +306,7 @@ public class principal {
 						break;
 						
 					
-					case '3': // ================================  O P C I � N  3  ================================
+					case '3': // ================================  O P T I O N  3  ================================
 					
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 3: \"Show information\"\n");
@@ -349,7 +349,7 @@ public class principal {
 						break;
 						
 						
-					case '4': // ================================  O P C I � N  4  ================================
+					case '4': // ================================  O P T I O N  4  ================================
 						
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 4: \"Show Stats\"\n");
@@ -360,7 +360,7 @@ public class principal {
 						break;
 				
 					
-					case '5': // ================================  O P C I � N  5  ================================
+					case '5': // ================================  O P T I O N  5  ================================
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 5: \"Leave\"\n");
 			    					    		
@@ -399,16 +399,16 @@ public class principal {
 	
 	public car[] default_cars(car[] default_cars) { 
 		
-		default_cars[0] = new car(4, 52572.1, "Black", "Mustang", "Ford", "Coup�"); //
-		default_cars[1] = new car(2, 179106, "Red", "R8", "Audi", "Coup�"); //
+		default_cars[0] = new car(4, 52572.1, "Black", "Mustang", "Ford", "Coupe"); //
+		default_cars[1] = new car(2, 179106, "Red", "R8", "Audi", "Coupe"); //
 		default_cars[2] = new car(2, 172000, "White", "Roadster", "Tesla", "-"); //
-		default_cars[3] = new car(2, 300000, "Red", "296 GTB", "Ferrari", "Coup�"); //
-		default_cars[4] = new car(2, 3000000, "Blue", "Chiron Pur Sport", "Bugatti", "Coup�"); //
-		default_cars[5] = new car(2, 4300000, "Grey", "CCXR Trevita", "Koenigsegg", "Coup�"); //
-		default_cars[6] = new car(4, 13000000, "Black Mate", "Sweptail", "Rolls-Royce", "Coup�"); //
-		default_cars[7] = new car(2, 102648, "White", "GT-R NISMO", "Nissan", "Coup�"); //
-		default_cars[8] = new car(2, 214120, "Cian", "DB11", "Aston Martin", "Coup�");
-		default_cars[9] = new car(2, 260329, "Mate", "911 Turbo S", "Porsche", "Coup�");
+		default_cars[3] = new car(2, 300000, "Red", "296 GTB", "Ferrari", "Coupe"); //
+		default_cars[4] = new car(2, 3000000, "Blue", "Chiron Pur Sport", "Bugatti", "Coupe"); //
+		default_cars[5] = new car(2, 4300000, "Grey", "CCXR Trevita", "Koenigsegg", "Coupe"); //
+		default_cars[6] = new car(4, 13000000, "Black Mate", "Sweptail", "Rolls-Royce", "Coupe"); //
+		default_cars[7] = new car(2, 102648, "White", "GT-R NISMO", "Nissan", "Coupe"); //
+		default_cars[8] = new car(2, 214120, "Cian", "DB11", "Aston Martin", "Coupe");
+		default_cars[9] = new car(2, 260329, "Mate", "911 Turbo S", "Porsche", "Coupe");
 		
 		return default_cars;
 	}
@@ -485,9 +485,9 @@ public class principal {
 		average = sum / default_cars.length;		
 		
 		System.out.println("                                       Statistics\n");
-		System.out.println(" The average of all prices is ....	" + Math.round(average) + " �");
-		System.out.println(" The highest price is ............	" + Math.round(maximum_price) + " �");
-		System.out.println(" The lowest price is .............	" + Math.round(minimum_price) + " �");
+		System.out.println(" The average of all prices is ....	" + Math.round(average) + " €");
+		System.out.println(" The highest price is ............	" + Math.round(maximum_price) + " €");
+		System.out.println(" The lowest price is .............	" + Math.round(minimum_price) + " €");
 	
 	}
 	
@@ -515,7 +515,7 @@ public class principal {
 				
 				switch (option) {
 			
-					case '1': // ================================  O P C I � N  1  ================================
+					case '1': // ================================  O P T I O N  1  ================================
 					
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 1: \"Modify the attributes\"\n");
@@ -565,7 +565,7 @@ public class principal {
 						break;
 						
 					
-					case '2': // ================================  O P C I � N  2  ================================
+					case '2': // ================================  O P T I O N  2  ================================
 					
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 2: \"Show information\"\n");
@@ -608,7 +608,7 @@ public class principal {
 						break;
 						
 						
-					case '3': // ================================  O P C I � N  3  ================================
+					case '3': // ================================  O P T I O N  3  ================================
 						
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 3: \"Show Stats\"\n");
@@ -619,7 +619,7 @@ public class principal {
 						break;
 				
 					
-					case '4': // ================================  O P C I � N  4  ================================
+					case '4': // ================================  O P T I O N  4  ================================
 						System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 4: \"Leave\"\n");
 			    					    		
