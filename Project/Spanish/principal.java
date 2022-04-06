@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/* 
+Author:		green-vibes-coding
+URL:		-
+Version:	1.0
+*/
+
 public class principal {
 
 	static Scanner scan = new Scanner(System.in);
