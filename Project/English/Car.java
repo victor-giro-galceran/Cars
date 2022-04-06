@@ -113,7 +113,7 @@ public class car {
 				"\n Model of the car .............. 	" + getModel() +
 				"\n Bodywork of the car ........... 	" + getBodywork() +
 				"\n Color of the car .............. 	" + getColor() +
-				"\n Price of the car .............. 	" + getPrice() + " �" +
+				"\n Price of the car .............. 	" + getPrice() + " €" +
 				"\n Number of car doors ........... 	" + getNumber_doors() + "\n";
 		
 	}
