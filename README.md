@@ -1,5 +1,14 @@
 # Object-oriented programming
 This is an activity to practice object-oriented programming. It consists of creating, modifying, visualizing and calculating features of cars with the creation of classes.
 
-# Programación orientada a objetos
-Esta es una actividad para practicar la programación orientada a objetos. Consiste en crear, modificar, visualizar y calcular características de autos con la creación de clases.
+# Project function
+
+The activity consists of two menus, the first is far from the second since you have to create a car interactively through the console. 
+
+<h3>First menu</h3>
+
+You will be asked for the make, model, body, color, number of doors, and price. Once all these properties have been entered, you can perform three actions. An action consists of modifying any car already created. Another action only prints the information of the car you have selected. And finally, the last option is to make a price comparison, get the maximum, minimum and average.
+
+<h3>Second menu</h3>
+
+Since the second menu is based on the previous menu, and we have some predetermined cars, it will no longer be necessary to create cars manually. The 3 actions already mentioned above can be carried out.
