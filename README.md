@@ -7,7 +7,7 @@ The activity consists of two menus, the first is far from the second since you h
 
 <h3>First menu</h3>
 
-You will be asked for the make, model, body, color, number of doors, and price. Once all these properties have been entered, you can perform three actions. An action consists of modifying any car already created. Another action only prints the information of the car you have selected. And finally, the last option is to make a price comparison, get the maximum, minimum and average.
+You will be asked for the creation of a car the model, body, color, number of doors, and price. Once all these properties have been entered, you can perform three actions. An action consists of modifying any car already created. Another action only prints the information of the car you have selected. And finally, the last option is to make a price comparison, get the maximum, minimum and average.
 
 <h3>Second menu</h3>
 
