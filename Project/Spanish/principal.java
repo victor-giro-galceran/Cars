@@ -105,7 +105,7 @@ public class principal {
 		System.out.println("\n                                  Coche creado\n" + 
 				"\n Marca del coche ............... 	" + nuevo_marca + 
 				"\n Modelo del coche .............. 	" + nuevo_modelo +
-				"\n Carrocer�a .................... 	" + nuevo_carroceria + 
+				"\n Carrocería .................... 	" + nuevo_carroceria + 
 				"\n Color del coche ............... 	" + nuevo_color + 
 				"\n Precio del coche .............. 	" + nuevo_precio + " €" + 
 				"\n Numero de puertas del coche ... 	" + nuevo_numero_puertas + "\n");
@@ -212,29 +212,28 @@ public class principal {
 		int posicion = 0;
 		boolean definido = false;
 				
-		do {
-				System.out.println("\n==================================\n");
-				System.out.println("1. Definir un nuevo coche");
+		do {			
+			System.out.println("\n==================================\n");
+			System.out.println("1. Definir un nuevo coche");
 				
-				if (definido == true) {
-					
-					System.out.println("2. Modificar los atributos");
-					System.out.println("3. Mostrar información");
-					System.out.println("4. Mostrar estadísticas");
-					System.out.println("5. Salir");
-					
-				}	
+			if (definido == true) {
 				
-				System.out.print(">> ");
-				opcion = scan.next().charAt(0);
-				
-				System.out.println("\n==================================\n");
-				
-				switch (opcion) {
-			
-					case '1': // ================================  O P C I Ó N  1  ================================
+				System.out.println("2. Modificar los atributos");
+				System.out.println("3. Mostrar información");
+				System.out.println("4. Mostrar estadísticas");
+				System.out.println("5. Salir");
+			}	
 						
-						System.out.println("_____________________________________________________________\n");
+			System.out.print(">> ");
+			opcion = scan.next().charAt(0);
+				
+			System.out.println("\n==================================\n");
+				
+			switch (opcion) {
+			
+				case '1': // ================================  O P C I Ó N  1  ================================
+									
+					System.out.println("_____________________________________________________________\n");
 			    		System.out.println("Has seleccionado la opción 1: \"Definir un nuevo coche\"\n");
 			    		
 			    		parking = crear_coche(parking, contador);
@@ -259,15 +258,14 @@ public class principal {
 			    		}
 			    		
 			    		definido = true;
-			    		
-						System.out.println("_____________________________________________________________\n");					
+			    							
+					System.out.println("_____________________________________________________________\n");					
+					break;
 						
-						break;
-						
-						
-					case '2': // ================================  O P C I Ó N  2  ================================
-					
-						System.out.println("_____________________________________________________________\n");
+							
+				case '2': // ================================  O P C I Ó N  2  ================================
+										
+					System.out.println("_____________________________________________________________\n");
 			    		System.out.println("Has seleccionado la opción 2: \"Modificar los atributos\"\n");
 			    		
 			    		System.out.println("\nCatálogo de coches\n");
@@ -307,87 +305,90 @@ public class principal {
 			    		parking = modificar_coche(parking, posicion);
 			    		
 			    		System.out.println(parking[posicion]);
-			    				    		
-						System.out.println("_____________________________________________________________\n");
-						break;
+			    						
+					System.out.println("_____________________________________________________________\n");
+					break;
 						
+							
+				case '3': // ================================  O P C I Ó N  3  ================================
+									
+					System.out.println("_____________________________________________________________\n");
+					System.out.println("Has seleccionado la opción 3: \"Mostrar información\"\n");
+
+					System.out.println("\nCatálogo de coches\n");
+
+					for (int n = 0; n < parking.length; n++) {
+
+						if (parking[n] != null) {
+
+							if (parking.length == 0) {
+
+								System.out.print(""); 
+
+							} else {
+
+								if (parking != null) {
+
+									System.out.print(" [" + n + "] " + parking[n].getMarca() + " - ");
 					
-					case '3': // ================================  O P C I Ó N  3  ================================
+									sleep(40);
+									System.err.print(parking[n].getModelo());
+									sleep(40);
+									
+									System.out.println("");
+
+								}
+
+							}
+							
+						}
+
+					}
+
+					System.out.println("\n[Posicion] ¿Que coche quieres visualizar?");
+					System.out.print(">> ");
+					posicion = scan.nextInt();	
+
+					System.out.println(parking[posicion]);
+
+					System.out.println("_____________________________________________________________\n");
+					break;
+
 					
-						System.out.println("_____________________________________________________________\n");
-			    		System.out.println("Has seleccionado la opción 3: \"Mostrar información\"\n");
-			    				
-			    		System.out.println("\nCatálogo de coches\n");
-			    		
-			    		for (int n = 0; n < parking.length; n++) {
-			    			
-			    			if (parking[n] != null) {
-			    			
-				    			if (parking.length == 0) {
-				    				
-				    				System.out.print(""); 
-				    				
-				    			} else {
-				    				
-				    				if (parking != null) {
-				    					
-				    					System.out.print(" [" + n + "] " + parking[n].getMarca() + " - ");
-				    					sleep(40);
-				    					System.err.print(parking[n].getModelo());
-				    					sleep(40);
-				    					System.out.println("");
-				    					
-				    				}
-				    				
-				    			}
-				    			
-			    			}
-			    			
-			    		}
-			    		
-			    		System.out.println("\n[Posicion] ¿Que coche quieres visualizar?");
-			    		System.out.print(">> ");
-			    		posicion = scan.nextInt();	
-			    		
-			    		System.out.println(parking[posicion]);
-			    		
-						System.out.println("_____________________________________________________________\n");
-						break;
-						
-						
-					case '4': // ================================  O P C I Ó N  4  ================================
-						
-						System.out.println("_____________________________________________________________\n");
-			    		System.out.println("Has seleccionado la opción 4: \"Mostrar estadísticas\"\n");
-			    					    		
-			    		mostrar_estadisticas(parking);
-			    					    		
-						System.out.println("_____________________________________________________________\n");
-						break;
+				case '4': // ================================  O P C I Ó N  4  ================================
+
+					System.out.println("_____________________________________________________________\n");
+					System.out.println("Has seleccionado la opción 4: \"Mostrar estadísticas\"\n");
+
+					mostrar_estadisticas(parking);
+			    							
+					System.out.println("_____________________________________________________________\n");
+					break;
 				
 					
-					case '5': // ================================  O P C I Ó N  5  ================================
-						System.out.println("_____________________________________________________________\n");
-			    		System.out.println("Has seleccionado la opción 5: \"Salir\"\n");
-			    					    		
-			    		System.out.print(" Saliendo de la simulación");
+				case '5': // ================================  O P C I Ó N  5  ================================
 						
-			    		for (int i = 0; i < 3; i++) {
-							
-			    			sleep(1000);
-							System.out.print(".");
-						
-			    		}
-			    		
-						System.out.println("");
-			    		
-			    		System.out.println("\n_____________________________________________________________\n");
-						break;
-						
-						
-					default:
-						System.out.println("Introduce números entre el 1 y el 5");
+					System.out.println("_____________________________________________________________\n");
+					System.out.println("Has seleccionado la opción 5: \"Salir\"\n");
+
+					System.out.print(" Saliendo de la simulación");
+
+					for (int i = 0; i < 3; i++) {
+
+						sleep(1000);
+						System.out.print(".");
+
 					}
+
+					System.out.println("");
+
+					System.out.println("\n_____________________________________________________________\n");
+					break;
+						
+								
+				default:
+					System.out.println("Introduce números entre el 1 y el 5");
+				}
 			
 			
 		} while (opcion != '5');
@@ -515,146 +516,147 @@ public class principal {
 		parking = coches_predeterminados(parking);
 				
 		do {
-				System.out.println("\n==================================\n");
-				System.out.println("1. Modificar los atributos");
-				System.out.println("2. Mostrar información");
-				System.out.println("3. Mostrar estadísticas");
-				System.out.println("4. Salir");
+			System.out.println("\n==================================\n");
+			System.out.println("1. Modificar los atributos");
+			System.out.println("2. Mostrar información");
+			System.out.println("3. Mostrar estadísticas");
+			System.out.println("4. Salir");
 				
-				System.out.print(">> ");
-				opcion = scan.next().charAt(0);
+			System.out.print(">> ");
+			opcion = scan.next().charAt(0);
 				
-				System.out.println("\n==================================\n");
+			System.out.println("\n==================================\n");
 				
-				switch (opcion) {
+			switch (opcion) {
 			
-					case '1': // ================================  O P C I Ó N  1  ================================
+				case '1': // ================================  O P C I Ó N  1  ================================
 					
-						System.out.println("_____________________________________________________________\n");
-			    		System.out.println("Has seleccionado la opción 1: \"Modificar los atributos\"\n");
-			    		
-			    		
-			    		System.out.println("\nCatálogo de coches\n");
-			    		
-			    		for (int n = 0; n < parking.length; n++) {
-			    			
-			    			if (parking[n] != null) {
-			    			
-				    			if (parking.length == 0) {
-				    				
-				    				System.out.print(""); 
-				    				
-				    			} else {
-				    				
-				    				if (parking != null) {
-				    					
-				    					System.out.print(" [" + n + "] " + parking[n].getMarca() + " - ");
-				    					sleep(40);
-				    					System.err.print(parking[n].getModelo());
-				    					sleep(40);
-				    					System.out.println("");
-				    					
-				    				}
-				    				
-				    			}
-				    			
-			    			}
-			    			
-			    		}
-			    					    		
-			    		System.out.println("\n[Posicion] ¿Que coche quieres modificar?");
-			    		System.out.print(">> ");
-			    		posicion = scan.nextInt();
-			    		
-			    		System.out.println(parking[posicion]);
-			    		
-			    		parking = modificar_coche_predeterminado(parking, posicion);
-			    		
-			    		System.out.println(parking[posicion]);
-			    				    		
-						System.out.println("_____________________________________________________________\n");
+					System.out.println("_____________________________________________________________\n");
+					System.out.println("Has seleccionado la opción 1: \"Modificar los atributos\"\n");
+
+					System.out.println("\nCatálogo de coches\n");
+
+					for (int n = 0; n < parking.length; n++) {
+
+						if (parking[n] != null) {
+
+							if (parking.length == 0) {
+
+								System.out.print(""); 
+
+							} else {
+
+								if (parking != null) {
+
+									System.out.print(" [" + n + "] " + parking[n].getMarca() + " - ");
+									
+									sleep(40);
+									System.err.print(parking[n].getModelo());
+									sleep(40);
 					
-						
-						break;
-						
-					
-					case '2': // ================================  O P C I Ó N  2  ================================
-					
-						System.out.println("_____________________________________________________________\n");
-			    		System.out.println("Has seleccionado la opción 2: \"Mostrar información\"\n");
-			    		
-			    		System.out.println("\nCatálogo de coches\n");
-			    		
-			    		for (int n = 0; n < parking.length; n++) {
-			    			
-			    			if (parking[n] != null) {
-			    			
-				    			if (parking.length == 0) {
-				    				
-				    				System.out.print(""); 
-				    				
-				    			} else {
-				    				
-				    				if (parking != null) {
-				    					
-				    					System.out.print(" [" + n + "] " + parking[n].getMarca() + " - ");
-				    					sleep(40);
-				    					System.err.print(parking[n].getModelo());
-				    					sleep(40);
-				    					System.out.println("");
-				    					
-				    				}
-				    				
-				    			}
-				    			
-			    			}
-			    			
-			    		}			    		
-			    		
-			    		System.out.println("\n[Posicion] ¿Que coche quieres visualizar?");
-			    		System.out.print(">> ");
-			    		posicion = scan.nextInt();	
-			    		
-			    		System.out.println(parking[posicion]);
-			    		
-						System.out.println("_____________________________________________________________\n");
-						break;
-						
-						
-					case '3': // ================================  O P C I Ó N  3  ================================
-						
-						System.out.println("_____________________________________________________________\n");
-			    		System.out.println("Has seleccionado la opción 3: \"Mostrar estadísticas\"\n");
-			    					    		
-			    		mostrar_estadisticas_predeterminadas(parking);
-			    					    		
-						System.out.println("_____________________________________________________________\n");
-						break;
-				
-					
-					case '4': // ================================  O P C I Ó N  4  ================================
-						System.out.println("_____________________________________________________________\n");
-			    		System.out.println("Has seleccionado la opción 4: \"Salir\"\n");
-			    					    		
-			    		System.out.print(" Saliendo de la simulación");
-						
-			    		for (int i = 0; i < 3; i++) {
-							
-			    			sleep(1000);
-							System.out.print(".");
-						
-			    		}
-			    		
-						System.out.println("");
-			    		
-			    		System.out.println("\n_____________________________________________________________\n");
-						break;
-						
-						
-					default:
-						System.out.println("Introduce números entre el 1 y el 4");
+									System.out.println("");
+
+								}
+
+							}
+
+						}
+
 					}
-			
+
+					System.out.println("\n[Posicion] ¿Que coche quieres modificar?");
+					System.out.print(">> ");
+					posicion = scan.nextInt();
+
+					System.out.println(parking[posicion]);
+
+					parking = modificar_coche_predeterminado(parking, posicion);
+
+					System.out.println(parking[posicion]);
+			    				    		
+					System.out.println("_____________________________________________________________\n");
+					break;
+						
+									
+				case '2': // ================================  O P C I Ó N  2  ================================
+									
+					System.out.println("_____________________________________________________________\n");
+					System.out.println("Has seleccionado la opción 2: \"Mostrar información\"\n");
+
+					System.out.println("\nCatálogo de coches\n");
+
+					for (int n = 0; n < parking.length; n++) {
+
+						if (parking[n] != null) {
+
+							if (parking.length == 0) {
+
+								System.out.print(""); 
+
+							} else {
+
+								if (parking != null) {
+
+									System.out.print(" [" + n + "] " + parking[n].getMarca() + " - ");
+					
+									sleep(40);
+									System.err.print(parking[n].getModelo());
+									sleep(40);
+									
+									System.out.println("");
+
+								}
+
+							}
+
+						}
+
+					}			    		
+
+					System.out.println("\n[Posicion] ¿Que coche quieres visualizar?");
+					System.out.print(">> ");
+					posicion = scan.nextInt();	
+
+					System.out.println(parking[posicion]);
+			    		
+					System.out.println("_____________________________________________________________\n");
+					break;
+						
+									
+				case '3': // ================================  O P C I Ó N  3  ================================
+						
+					System.out.println("_____________________________________________________________\n");
+					System.out.println("Has seleccionado la opción 3: \"Mostrar estadísticas\"\n");
+
+					mostrar_estadisticas_predeterminadas(parking);
+			    					    		
+					System.out.println("_____________________________________________________________\n");
+					break;
+				
+								
+				case '4': // ================================  O P C I Ó N  4  ================================
+						
+					System.out.println("_____________________________________________________________\n");
+					System.out.println("Has seleccionado la opción 4: \"Salir\"\n");
+
+					System.out.print(" Saliendo de la simulación");
+						
+					for (int i = 0; i < 3; i++) {
+
+						sleep(1000);
+						System.out.print(".");
+					}
+			    		
+					System.out.println("");
+			    		
+		    			System.out.println("\n_____________________________________________________________\n");
+					break;
+				
+					
+				default:
+				
+					System.out.println("Introduce números entre el 1 y el 4");
+			}
 			
 		} while (opcion != '4');
 			
@@ -681,8 +683,7 @@ public class principal {
 
 	public void sleep(int time) {
 		
-		try {
-			
+		try {					
 			Thread.sleep(time);
 			
 		} catch (InterruptedException e) {
