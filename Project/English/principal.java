@@ -44,15 +44,12 @@ public class principal {
 		switch (choose) {
 			
 			case '1':
-						
 				new principal().menu_default();
 				break;
 						
 			case '2':
-						
 				new principal().menu_manual();
 				break;
-				
 		}
 		
 	}
@@ -102,7 +99,8 @@ public class principal {
 		System.out.print(">> ");
 		int new_number_doors = scan.nextInt();
 		
-		System.out.println("\n                                  Created car\n" + 
+		System.out.println(
+				"\n                                  Created car\n" + 
 				"\n Brand of the car .............. 	" + new_brand + 
 				"\n Model of the car .............. 	" + new_model +
 				"\n Bodywork ...................... 	" + new_bodywork + 
@@ -212,29 +210,29 @@ public class principal {
 		int position = 0;
 		boolean defined = false;
 				
-		do {
-				System.out.println("\n==================================\n");
-				System.out.println("1. Define a new car");
+		do {				
+			System.out.println("\n==================================\n");
+			System.out.println("1. Define a new car");
 				
-				if (defined == true) {
+			if (defined == true) {
 					
-					System.out.println("2. Modify the attributes");
-					System.out.println("3. Show information");
-					System.out.println("4. Show Stats");
-					System.out.println("5. Leave");
+				System.out.println("2. Modify the attributes");
+				System.out.println("3. Show information");
+				System.out.println("4. Show Stats");
+				System.out.println("5. Leave");
 					
-				}	
+			}	
 				
-				System.out.print(">> ");
-				option = scan.next().charAt(0);
+			System.out.print(">> ");
+			option = scan.next().charAt(0);
 				
-				System.out.println("\n==================================\n");
-				
-				switch (option) {
-			
-					case '1': // ================================  O P T I O N  1  ================================
+			System.out.println("\n==================================\n");
+					
+			switch (option) {
 						
-						System.out.println("_____________________________________________________________\n");
+				case '1': // ================================  O P T I O N  1  ================================
+								
+					System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 1: \"Define a new car\"\n");
 			    		
 			    		parking = create_car(parking, counter);
@@ -260,14 +258,13 @@ public class principal {
 			    		
 			    		defined = true;
 			    		
-						System.out.println("_____________________________________________________________\n");					
-						
-						break;
-						
-						
-					case '2': // ================================  O P T I O N  2  ================================
+					System.out.println("_____________________________________________________________\n");					
+					break;
+									
 					
-						System.out.println("_____________________________________________________________\n");
+				case '2': // ================================  O P T I O N  2  ================================
+									
+					System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 2: \"Modify the attributes\"\n");
 			    		
 			    		System.out.println("\nCar catalog\n");
@@ -308,13 +305,13 @@ public class principal {
 			    		
 			    		System.out.println(parking[position]);
 			    				    		
-						System.out.println("_____________________________________________________________\n");
-						break;
+					System.out.println("_____________________________________________________________\n");
+					break;
 						
+								
+				case '3': // ================================  O P T I O N  3  ================================
 					
-					case '3': // ================================  O P T I O N  3  ================================
-					
-						System.out.println("_____________________________________________________________\n");
+					System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 3: \"Show information\"\n");
 			    				
 			    		System.out.println("\nCar catalog\n");
@@ -351,43 +348,44 @@ public class principal {
 			    		
 			    		System.out.println(parking[position]);
 			    		
-						System.out.println("_____________________________________________________________\n");
-						break;
+					System.out.println("_____________________________________________________________\n");
+					break;
+										
+					
+				case '4': // ================================  O P T I O N  4  ================================
 						
-						
-					case '4': // ================================  O P T I O N  4  ================================
-						
-						System.out.println("_____________________________________________________________\n");
+					System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 4: \"Show Stats\"\n");
 			    					    		
 			    		show_statistics(parking);
 			    					    		
-						System.out.println("_____________________________________________________________\n");
-						break;
+					System.out.println("_____________________________________________________________\n");
+					break;
 				
-					
-					case '5': // ================================  O P T I O N  5  ================================
-						System.out.println("_____________________________________________________________\n");
+								
+				case '5': // ================================  O P T I O N  5  ================================
+				
+					System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 5: \"Leave\"\n");
 			    					    		
 			    		System.out.print(" Leaving the simulation");
 						
 			    		for (int i = 0; i < 3; i++) {
-							
-			    			sleep(1000);
-							System.out.print(".");
-						
-			    		}
+									    		
+						sleep(1000);
+						System.out.print(".");
+					}
 			    		
-						System.out.println("");
+					System.out.println("");
 			    		
 			    		System.out.println("\n_____________________________________________________________\n");
-						break;
-						
-						
-					default:
-						System.out.println("Enter numbers between 1 and 5");
-					}
+					break;
+										
+					
+				default:
+					System.out.println("Enter numbers between 1 and 5");
+			
+			}
 			
 			
 		} while (option != '5');
@@ -405,16 +403,16 @@ public class principal {
 	
 	public car[] default_cars(car[] default_cars) { 
 		
-		default_cars[0] = new car(4, 52572.1, "Black", "Mustang", "Ford", "Coupe"); //
-		default_cars[1] = new car(2, 179106, "Red", "R8", "Audi", "Coupe"); //
-		default_cars[2] = new car(2, 172000, "White", "Roadster", "Tesla", "-"); //
-		default_cars[3] = new car(2, 300000, "Red", "296 GTB", "Ferrari", "Coupe"); //
-		default_cars[4] = new car(2, 3000000, "Blue", "Chiron Pur Sport", "Bugatti", "Coupe"); //
-		default_cars[5] = new car(2, 4300000, "Grey", "CCXR Trevita", "Koenigsegg", "Coupe"); //
-		default_cars[6] = new car(4, 13000000, "Black Mate", "Sweptail", "Rolls-Royce", "Coupe"); //
-		default_cars[7] = new car(2, 102648, "White", "GT-R NISMO", "Nissan", "Coupe"); //
-		default_cars[8] = new car(2, 214120, "Cian", "DB11", "Aston Martin", "Coupe");
-		default_cars[9] = new car(2, 260329, "Mate", "911 Turbo S", "Porsche", "Coupe");
+		default_cars[0] = new car(4, 52572.1, "Black", "Mustang", "Ford", "Coupe"); 				//
+		default_cars[1] = new car(2, 179106, "Red", "R8", "Audi", "Coupe"); 					//
+		default_cars[2] = new car(2, 172000, "White", "Roadster", "Tesla", "-"); 				//
+		default_cars[3] = new car(2, 300000, "Red", "296 GTB", "Ferrari", "Coupe"); 				//
+		default_cars[4] = new car(2, 3000000, "Blue", "Chiron Pur Sport", "Bugatti", "Coupe"); 			//
+		default_cars[5] = new car(2, 4300000, "Grey", "CCXR Trevita", "Koenigsegg", "Coupe"); 			//
+		default_cars[6] = new car(4, 13000000, "Black Mate", "Sweptail", "Rolls-Royce", "Coupe"); 		//
+		default_cars[7] = new car(2, 102648, "White", "GT-R NISMO", "Nissan", "Coupe"); 			//
+		default_cars[8] = new car(2, 214120, "Cian", "DB11", "Aston Martin", "Coupe");				//
+		default_cars[9] = new car(2, 260329, "Mate", "911 Turbo S", "Porsche", "Coupe");			//
 		
 		return default_cars;
 	}
@@ -508,22 +506,22 @@ public class principal {
 		parking = default_cars(parking);
 				
 		do {
-				System.out.println("\n==================================\n");
-				System.out.println("1. Modify the attributes");
-				System.out.println("2. Show information");
-				System.out.println("3. Show Stats");
-				System.out.println("4. Leave");
+			System.out.println("\n==================================\n");
+			System.out.println("1. Modify the attributes");
+			System.out.println("2. Show information");
+			System.out.println("3. Show Stats");
+			System.out.println("4. Leave");
 				
-				System.out.print(">> ");
-				option = scan.next().charAt(0);
+			System.out.print(">> ");
+			option = scan.next().charAt(0);
 				
-				System.out.println("\n==================================\n");
+			System.out.println("\n==================================\n");
 				
-				switch (option) {
-			
-					case '1': // ================================  O P T I O N  1  ================================
+			switch (option) {
 					
-						System.out.println("_____________________________________________________________\n");
+				case '1': // ================================  O P T I O N  1  ================================
+								
+					System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 1: \"Modify the attributes\"\n");
 			    		
 			    		
@@ -542,10 +540,12 @@ public class principal {
 				    				if (parking != null) {
 				    					
 				    					System.out.print(" [" + n + "] " + parking[n].getBrand() + " - ");
-				    					sleep(40);
+				    					
+									sleep(40);
 				    					System.err.print(parking[n].getModel());
 				    					sleep(40);
-				    					System.out.println("");
+				    					
+									System.out.println("");
 				    					
 				    				}
 				    				
@@ -565,15 +565,13 @@ public class principal {
 			    		
 			    		System.out.println(parking[position]);
 			    				    		
-						System.out.println("_____________________________________________________________\n");
+					System.out.println("_____________________________________________________________\n");
+					break;
+									
 					
-						
-						break;
-						
+				case '2': // ================================  O P T I O N  2  ================================
 					
-					case '2': // ================================  O P T I O N  2  ================================
-					
-						System.out.println("_____________________________________________________________\n");
+					System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 2: \"Show information\"\n");
 			    		
 			    		System.out.println("\nCar catalog\n");
@@ -610,23 +608,24 @@ public class principal {
 			    		
 			    		System.out.println(parking[position]);
 			    		
-						System.out.println("_____________________________________________________________\n");
-						break;
+					System.out.println("_____________________________________________________________\n");
+					break;
+											
+					
+				case '3': // ================================  O P T I O N  3  ================================
 						
-						
-					case '3': // ================================  O P T I O N  3  ================================
-						
-						System.out.println("_____________________________________________________________\n");
+					System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 3: \"Show Stats\"\n");
 			    					    		
 			    		show_default_stats(parking);
 			    					    		
-						System.out.println("_____________________________________________________________\n");
-						break;
+					System.out.println("_____________________________________________________________\n");
+					break;
 				
-					
-					case '4': // ================================  O P T I O N  4  ================================
-						System.out.println("_____________________________________________________________\n");
+				
+				case '4': // ================================  O P T I O N  4  ================================
+				
+					System.out.println("_____________________________________________________________\n");
 			    		System.out.println("You have selected the option 4: \"Leave\"\n");
 			    					    		
 			    		System.out.print(" Leaving the simulation");
@@ -634,19 +633,20 @@ public class principal {
 			    		for (int i = 0; i < 3; i++) {
 							
 			    			sleep(1000);
-							System.out.print(".");
+						System.out.print(".");
 						
 			    		}
 			    		
-						System.out.println("");
+					System.out.println("");
 			    		
 			    		System.out.println("\n_____________________________________________________________\n");
-						break;
-						
-						
-					default:
-						System.out.println("Enter numbers between 1 and 4!");
-					}
+					break;
+										
+				
+				default:
+			
+					System.out.println("Enter numbers between 1 and 4!");
+			}
 			
 			
 		} while (option != '4');
@@ -674,8 +674,7 @@ public class principal {
 
 	public void sleep(int time) {
 		
-		try {
-			
+		try {			
 			Thread.sleep(time);
 			
 		} catch (InterruptedException e) {
