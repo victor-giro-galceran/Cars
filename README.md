@@ -26,4 +26,5 @@ Since the second menu is based on the previous menu, and we have some predetermi
 
 
 Contributions, issues, and feature requests are welcome!
+
 Give a ⭐️ if you like this project!
