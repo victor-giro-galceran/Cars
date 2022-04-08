@@ -25,6 +25,6 @@ Since the second menu is based on the previous menu, and we have some predetermi
 - [x] :chart_with_upwards_trend: Statistics of prices
 
 
-Contributions, issues, and feature requests are welcome!
-
-Give a ⭐️ if you like this project!
+#
+>Contributions, issues, and feature requests are welcome!
+>Give a ⭐️ if you like this project!
