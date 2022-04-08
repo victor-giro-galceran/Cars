@@ -23,3 +23,7 @@ Since the second menu is based on the previous menu, and we have some predetermi
 - [x] :red_car: Modify car
 - [x] :page_with_curl: Show intormation
 - [x] :chart_with_upwards_trend: Statistics of prices
+
+
+Contributions, issues, and feature requests are welcome!
+Give a ⭐️ if you like this project!
