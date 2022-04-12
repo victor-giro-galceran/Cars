@@ -4,7 +4,7 @@ This is an activity to practice object-oriented programming. It consists of crea
 ### Project state
 | Today's code  | To update |
 | ------------- | ------------- |
-|  <ul><li>[x] Works</li><li>[x] Simple</li><li>[x] Interactive</li><li>[x] Can be improved</li></ul>  | <li>[ ] More user-friendly</li><li>[ ] Add settings</li><li>[ ] Not definitive</li>  |
+|  <ul><li>[x] Works</li><li>[x] Simple</li><li>[x] Interactive</li><li>[x] Can be improved</li></ul>  | <li>[ ] More user-friendly</li><li>[ ] Add settings</li><li>[ ] Not definitive</li><li>[ ] Obtimizable</li>  |
 # Project function
 
 The activity consists of two menus, the first is far from the second since you have to create a car interactively through the console. 
